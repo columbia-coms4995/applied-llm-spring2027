@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://columbia-coms4995.github.io/applied-llm-spring2027/sitemap.xml
