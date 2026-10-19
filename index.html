@@ -5,31 +5,38 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>Applied Large Language Models · Spring 2027 · Columbia University</title>
   <meta name="description" content="Applied Large Language Models with Dr. Spencer W. Luo. Spring 2027 course schedule, materials, and grading at Columbia University.">
-  <meta name="theme-color" content="#022169">
+  <meta name="theme-color" content="#dce9f1">
   <link rel="canonical" href="https://columbia-coms4995.github.io/applied-llm-spring2027/">
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
   <link rel="preload" href="fonts/source-sans-3.woff2" as="font" type="font/woff2" crossorigin>
-  <link rel="stylesheet" href="design.css?v=20261018h">
-  <script src="course.js" defer></script>
+  <link rel="stylesheet" href="design.css?v=20261018i">
+  <script src="course.js?v=20261018i" defer></script>
 </head>
 <body>
 <a class="skip" href="#schedule">Skip to schedule</a>
 <header class="masthead" id="top"><div class="wrap">
-  <div class="university">Columbia University</div>
-  <div class="department">Department of Computer Science</div>
+  <div class="site-identity"><span class="university">Columbia University</span><span class="course-name">Applied LLM</span></div>
+  <nav class="section-nav" aria-label="Page sections">
+    <a href="#schedule" aria-current="location">Schedule</a><a href="#grading">Grading</a><a href="#guide">Course info</a>
+  </nav>
 </div></header>
 <section class="hero" aria-labelledby="course-title"><div class="wrap">
   <div class="hero-composition"><div class="hero-copy">
-    <p class="course-meta">Spring 2027 <span aria-hidden="true">·</span> 3 credits</p>
+    <p class="course-meta">Department of Computer Science</p>
     <h1 id="course-title"><span>Applied Large</span> <span>Language Models</span></h1>
     <p class="lede">Train, adapt, and evaluate language models.<br> Build applications with retrieval and agents.</p>
-    <p class="instructor"><a href="mailto:swl2145@columbia.edu">Dr. Spencer W. Luo</a></p>
     <nav class="course-links" aria-label="Course resources">
       <a class="primary" href="https://docs.google.com/document/d/1qv0kUP2Cn9IZqM47AruA9bebrM4BASHhUqCxK8b1FXM/edit">Syllabus</a>
       <a href="#session-1">Lecture 1 materials</a>
     </nav>
   </div>
-  <figure class="learning-figure">
+  <aside class="course-aside" aria-label="Course at a glance">
+    <dl class="course-facts">
+      <div><dt>Term</dt><dd>Spring 2027 · 3 credits</dd></div>
+      <div><dt>Instructor</dt><dd><a href="mailto:swl2145@columbia.edu">Dr. Spencer W. Luo</a></dd></div>
+      <div><dt>Meetings</dt><dd>14 · Dates to be announced</dd></div>
+    </dl>
+    <figure class="learning-figure">
   <div class="figure-title">Text, one token at a time.</div>
   <svg viewBox="0 0 470 220" role="img" aria-labelledby="figure-title figure-desc" xmlns="http://www.w3.org/2000/svg">
     <title id="figure-title">Predicting the next token</title>
@@ -41,33 +48,30 @@
       <rect x="10" y="110" width="144" height="65" rx="7"/>
       <rect x="166" y="110" width="68" height="65" rx="7"/>
     </g>
-    <rect x="255" y="117" width="151" height="65" rx="7" fill="#9db7c7"/>
-    <rect x="246" y="110" width="151" height="65" rx="7" fill="var(--hero-accent)"/>
-    <g fill="var(--hero-ink)" font-family="Arial, Helvetica, sans-serif" font-size="32" text-anchor="middle">
+    <rect x="255" y="117" width="151" height="65" rx="7" fill="var(--token-shadow)"/>
+    <rect x="246" y="110" width="151" height="65" rx="7" fill="var(--token-accent)"/>
+    <g fill="var(--token-ink)" font-family="Arial, Helvetica, sans-serif" font-size="32" text-anchor="middle">
       <text x="51.5" y="65">The</text><text x="180" y="65">capital</text><text x="301" y="65">of</text>
-      <text x="82" y="153">France</text><text x="200" y="153">is</text><text x="321.5" y="153" fill="var(--paper)">Paris</text>
+      <text x="82" y="153">France</text><text x="200" y="153">is</text><text x="321.5" y="153" fill="var(--token-accent-ink)">Paris</text>
     </g>
-    <path d="M425 123v40" stroke="var(--hero-cursor)" stroke-width="3"/>
+    <path d="M425 123v40" stroke="var(--token-accent)" stroke-width="3"/>
   </svg>
   <figcaption><span><i class="context-key" aria-hidden="true"></i>Context</span><span><i class="token-key" aria-hidden="true"></i>New token</span></figcaption>
 </figure>
 
+  </aside>
   </div>
 </div></section>
-<nav class="section-nav" aria-label="Page sections"><div class="wrap">
-  <a href="#schedule" aria-current="location">Schedule</a><a href="#grading">Grading</a><a href="#guide">Course info</a>
-</div></nav>
 <main>
 <section class="section" id="schedule" aria-labelledby="schedule-title"><div class="wrap">
-  <div class="section-heading"><div><h2 id="schedule-title">Schedule &amp; materials</h2><p class="section-note">14 meetings · Calendar dates to be announced</p></div>
+  <div class="section-heading"><div><p class="eyebrow">Course schedule</p><h2 id="schedule-title">Schedule &amp; materials</h2></div>
     <div class="schedule-controls" hidden><div class="schedule-filters" role="group" aria-label="Filter course meetings">
       <button type="button" data-filter="all" aria-pressed="true">All</button>
       <button type="button" data-filter="materials" aria-pressed="false">Materials</button>
       <button type="button" data-filter="exams" aria-pressed="false">Exams</button>
     </div><span class="filter-count visually-hidden" aria-live="polite"></span></div>
   </div>
-  <div class="schedule-columns" aria-hidden="true"><span>Class</span><span>Topic</span><span>Materials</span></div>
-  <ol class="rows" aria-label="Course meetings"><li class="row lecture" id="session-1" data-materials="true" tabindex="-1">
+  <section class="schedule-group" aria-labelledby="group-models"><header class="group-heading"><p id="group-models">Models &amp; evaluation</p><span>Meetings 1–7</span></header><ol class="rows" start="1" aria-label="Models &amp; evaluation"><li class="row lecture" id="session-1" data-materials="true" tabindex="-1">
       <span class="session-number" aria-label="Meeting 1">01</span>
       <div class="lesson-content"><h3>Problem Framing and Transformer Foundations</h3></div>
       <div class="mats"><a href="https://docs.google.com/presentation/d/1On41LLqj6LOFe_atojtJunH1xON3vqTQ46ldjEtzydE/edit" aria-label="Lecture 1 Slides">Slides</a><a href="https://colab.research.google.com/drive/1O9z1Z3obNwwSDvBKY9VD7lh8o0wkugVo" aria-label="Lecture 1 Notebook">Notebook</a></div></li>
@@ -94,8 +98,8 @@
 <li class="row exam" id="session-7" data-materials="false" tabindex="-1">
       <span class="session-number" aria-label="Meeting 7">07</span>
       <div class="lesson-content"><h3>Midterm Exam</h3></div>
-      <div class="mats"></div></li>
-<li class="row lecture" id="session-8" data-materials="false" tabindex="-1">
+      <div class="mats"></div></li></ol></section>
+<section class="schedule-group" aria-labelledby="group-applications"><header class="group-heading"><p id="group-applications">Applications &amp; agents</p><span>Meetings 8–12</span></header><ol class="rows" start="8" aria-label="Applications &amp; agents"><li class="row lecture" id="session-8" data-materials="false" tabindex="-1">
       <span class="session-number" aria-label="Meeting 8">08</span>
       <div class="lesson-content"><h3>Retrieval-Augmented Generation</h3><div class="assignments"><a class="assignment" href="#project-1">MP 1 due</a><a class="assignment" href="#project-2">MP 2 out</a></div></div>
       <div class="mats"></div></li>
@@ -114,18 +118,19 @@
 <li class="row lecture" id="session-12" data-materials="false" tabindex="-1">
       <span class="session-number" aria-label="Meeting 12">12</span>
       <div class="lesson-content"><h3>Inference and Reliable Deployment</h3></div>
-      <div class="mats"></div></li>
-<li class="row review" id="session-13" data-materials="false" tabindex="-1">
+      <div class="mats"></div></li></ol></section>
+<section class="schedule-group" aria-labelledby="group-review"><header class="group-heading"><p id="group-review">Review &amp; final</p><span>Meetings 13–14</span></header><ol class="rows" start="13" aria-label="Review &amp; final"><li class="row review" id="session-13" data-materials="false" tabindex="-1">
       <span class="session-number" aria-label="Meeting 13">13</span>
       <div class="lesson-content"><h3>Course Review</h3><div class="assignments"><a class="assignment" href="#project-3">MP 3 due</a></div></div>
       <div class="mats"></div></li>
 <li class="row exam" id="session-14" data-materials="false" tabindex="-1">
       <span class="session-number" aria-label="Meeting 14">14</span>
       <div class="lesson-content"><h3>Final Exam</h3></div>
-      <div class="mats"></div></li></ol>
+      <div class="mats"></div></li></ol></section>
 </div></section>
-<section class="section" id="grading" aria-labelledby="grading-title"><div class="wrap">
-  <h2 id="grading-title">Grading</h2>
+<section class="section" id="grading" aria-labelledby="grading-title"><div class="wrap section-split">
+  <div class="section-intro"><p class="eyebrow">Assessment</p><h2 id="grading-title">Grading</h2></div>
+  <div class="section-body">
   <div class="grades">
     <div><div class="weight">60<span>%</span></div><h3>Mini projects</h3><p>3 individual projects · 20% each</p></div>
     <div><div class="weight">20<span>%</span></div><h3>Midterm</h3><p>Meeting 7 · Closed book</p></div>
@@ -139,9 +144,10 @@
     </ul><p>Well-supported negative results can earn full credit.</p></div>
     <div><h3>Exams</h3><p><strong>Midterm:</strong> meetings 1–6, in class. Short calculations, result interpretation, and engineering scenarios.</p><p><strong>Final:</strong> cumulative, in person. Emphasis on evaluation, failure diagnosis, and justified decisions.</p><p>Project requirements and grading criteria will accompany each assignment.</p></div>
   </div></details>
-</div></section>
-<section class="section" id="guide" aria-labelledby="guide-title"><div class="wrap">
-  <div class="section-heading"><h2 id="guide-title">Course information</h2></div>
+</div></div></section>
+<section class="section" id="guide" aria-labelledby="guide-title"><div class="wrap section-split">
+  <div class="section-intro"><p class="eyebrow">Getting started</p><h2 id="guide-title">Course information</h2></div>
+  <div class="section-body">
   <p class="info-intro">Python, basic probability, and ML fundamentals. No prior deep learning or NLP course required.</p>
   <details class="course-details" id="about"><summary>Prerequisites, computing &amp; AI tools<span class="disclosure-mark" aria-hidden="true">+</span></summary><div class="details-content">
     <p>You should have trained and evaluated at least one ML model. The course welcomes graduate students and advanced undergraduates with this background.</p>
@@ -153,9 +159,9 @@
     <p><a href="https://www.manning.com/books/build-a-large-language-model-from-scratch">Build a Large Language Model (From Scratch)</a> — Sebastian Raschka (2024). Optional training background.</p>
     <p>Meeting times, classroom, and office hours will be announced. The <a href="https://docs.google.com/document/d/1qv0kUP2Cn9IZqM47AruA9bebrM4BASHhUqCxK8b1FXM/edit">syllabus draft</a> has the full outline and references.</p>
   </div></details>
-</div></section>
+</div></div></section>
 </main>
-<footer class="footer"><div class="wrap"><span>Applied LLM · Spring 2027</span><a href="#top">Back to top</a></div></footer>
+<footer class="footer"><div class="wrap"><div><span class="footer-course">Applied Large Language Models</span><span class="footer-term">Columbia University · Spring 2027</span></div><a href="#top">Back to top</a></div></footer>
 <script type="application/json" id="course-data">[{"number": 1, "title": "Problem Framing and Transformer Foundations", "note": "Baselines, tokenization, attention, and decoding.", "kind": "lecture", "assignments": [], "links": [{"label": "Slides", "href": "https://docs.google.com/presentation/d/1On41LLqj6LOFe_atojtJunH1xON3vqTQ46ldjEtzydE/edit"}, {"label": "Notebook", "href": "https://colab.research.google.com/drive/1O9z1Z3obNwwSDvBKY9VD7lh8o0wkugVo"}]}, {"number": 2, "title": "Pre-training LLMs", "note": "Next-token loss, data quality, scaling, and compute.", "kind": "lecture", "assignments": [], "links": []}, {"number": 3, "title": "Supervised Fine-Tuning and LoRA", "note": "Instruction data, loss masking, LoRA, and synthetic data.", "kind": "lecture", "assignments": [], "links": []}, {"number": 4, "title": "Preference Optimization, RL, and Reasoning Models", "note": "RLHF/PPO, DPO, RLVR/GRPO, distillation, inference budgets.", "kind": "lecture", "assignments": ["MP1 out"], "links": []}, {"number": 5, "title": "Prompting and Context Engineering", "note": "Examples, structured outputs, context selection and compaction.", "kind": "lecture", "assignments": [], "links": []}, {"number": 6, "title": "Data and Evaluation for LLM Systems", "note": "Held-out tests, leakage, error slices, judges, and repeat trials.", "kind": "lecture", "assignments": [], "links": []}, {"number": 7, "title": "Midterm Exam", "note": "", "kind": "exam", "assignments": [], "links": []}, {"number": 8, "title": "Retrieval-Augmented Generation", "note": "Embeddings, reranking, grounding, and RAG failures.", "kind": "lecture", "assignments": ["MP1 due", "MP2 out"], "links": []}, {"number": 9, "title": "Building LLM Agents", "note": "Tools, planning, MCP, and harnesses; coding-agent permissions and prompt injection.", "kind": "lecture", "assignments": [], "links": []}, {"number": 10, "title": "Workflows, Memory, and Multi-Agent Systems", "note": "Persistent state, recovery, delegation, and workflow baselines.", "kind": "lecture", "assignments": ["MP3 out"], "links": []}, {"number": 11, "title": "Evaluating Agents and Validating Judges", "note": "Verified task success, human-calibrated judges, regression and release checks.", "kind": "lecture", "assignments": ["MP2 due"], "links": []}, {"number": 12, "title": "Inference and Reliable Deployment", "note": "KV cache, batching, quantization, routing; cost, latency, and monitoring.", "kind": "lecture", "assignments": [], "links": []}, {"number": 13, "title": "Course Review", "note": "Integrated cases, design trade-offs, and exam practice.", "kind": "review", "assignments": ["MP3 due"], "links": []}, {"number": 14, "title": "Final Exam", "note": "", "kind": "exam", "assignments": [], "links": []}]</script>
 </body>
 </html>

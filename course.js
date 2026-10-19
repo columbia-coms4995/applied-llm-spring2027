@@ -12,6 +12,9 @@
       row.hidden = !show;
       if (show) count++;
     });
+    document.querySelectorAll('.schedule-group').forEach(group => {
+      group.hidden = !group.querySelector('.row:not([hidden])');
+    });
     buttons.forEach(button => button.setAttribute('aria-pressed', String(button.dataset.filter === filter)));
     document.querySelector('.filter-count').textContent = `${count} of ${rows.length} meetings`;
     window.dispatchEvent(new Event('resize'));
