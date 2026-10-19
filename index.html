@@ -5,11 +5,11 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>Applied Large Language Models · Spring 2027 · Columbia University</title>
   <meta name="description" content="Applied Large Language Models with Dr. Spencer W. Luo. Spring 2027 course schedule, materials, and grading at Columbia University.">
-  <meta name="theme-color" content="#0a2d57">
+  <meta name="theme-color" content="#142e45">
   <link rel="canonical" href="https://columbia-coms4995.github.io/applied-llm-spring2027/">
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
   <link rel="preload" href="fonts/source-sans-3.woff2" as="font" type="font/woff2" crossorigin>
-  <link rel="stylesheet" href="design.css?v=20261018b">
+  <link rel="stylesheet" href="design.css?v=20261018c">
   <script src="course.js" defer></script>
 </head>
 <body>
@@ -33,21 +33,21 @@
   <div class="figure-title">Text, one token at a time.</div>
   <svg viewBox="0 0 470 220" role="img" aria-labelledby="figure-title figure-desc" xmlns="http://www.w3.org/2000/svg">
     <title id="figure-title">Predicting the next token</title>
-    <desc id="figure-desc">The context reads “The capital of France is”. The model adds “Paris”, highlighted in dark blue, as the next token. This is a simplified illustration of language generation.</desc>
-    <g fill="#f7fbfe" stroke="#9ebfd4" stroke-width="1.5">
+    <desc id="figure-desc">The context reads “The capital of France is”. The model adds “Paris”, highlighted in Columbia light blue, as the next token. This is a simplified illustration of language generation.</desc>
+    <g fill="var(--token-surface)" stroke="var(--token-line)" stroke-width="1.5">
       <rect x="10" y="22" width="83" height="65" rx="7"/>
       <rect x="105" y="22" width="150" height="65" rx="7"/>
       <rect x="267" y="22" width="68" height="65" rx="7"/>
       <rect x="10" y="110" width="144" height="65" rx="7"/>
       <rect x="166" y="110" width="68" height="65" rx="7"/>
     </g>
-    <rect x="255" y="117" width="151" height="65" rx="7" fill="#b3cddd"/>
-    <rect x="246" y="110" width="151" height="65" rx="7" fill="#0a2d57"/>
-    <g fill="#0a2d57" font-family="Arial, Helvetica, sans-serif" font-size="32" text-anchor="middle">
+    <rect x="255" y="117" width="151" height="65" rx="7" fill="#536e80"/>
+    <rect x="246" y="110" width="151" height="65" rx="7" fill="var(--columbia)"/>
+    <g fill="var(--hero-ink)" font-family="Arial, Helvetica, sans-serif" font-size="32" text-anchor="middle">
       <text x="51.5" y="65">The</text><text x="180" y="65">capital</text><text x="301" y="65">of</text>
-      <text x="82" y="153">France</text><text x="200" y="153">is</text><text x="321.5" y="153" fill="#fff">Paris</text>
+      <text x="82" y="153">France</text><text x="200" y="153">is</text><text x="321.5" y="153" fill="var(--navy)">Paris</text>
     </g>
-    <path d="M425 123v40" stroke="#165d8b" stroke-width="3"/>
+    <path d="M425 123v40" stroke="var(--gold)" stroke-width="3"/>
   </svg>
   <figcaption><span><i class="context-key" aria-hidden="true"></i>Context</span><span><i class="token-key" aria-hidden="true"></i>New token</span></figcaption>
 </figure>
