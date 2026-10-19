@@ -25,7 +25,7 @@ h3{font:600 20px/1.4 var(--body)}
 .section-nav{display:flex;align-items:center;gap:7px}
 .section-nav a{display:inline-flex;align-items:center;min-height:44px;padding:8px 13px;font-size:18px;font-weight:600;color:var(--muted);text-decoration:none;white-space:nowrap;border-radius:2px}
 .section-nav a:hover,.section-nav a[aria-current=location]{background:#dfeaf0;color:var(--navy)}
-.hero{--hero-bg:#dce9f1;--hero-ink:var(--navy);--hero-muted:#354b5b;--hero-label:var(--blue);--hero-line:#9db3c3;--button-bg:var(--navy);--button-ink:#f7fafc;--token-surface:#f7fafc;--token-line:#7e9aae;--token-ink:var(--blue);--token-accent:var(--navy);--token-accent-ink:#f7fafc;--token-shadow:#9db5c7;background:var(--hero-bg);color:var(--hero-muted);border-bottom:1px solid var(--hero-line)}
+.hero{--hero-bg:var(--navy);--hero-ink:#f7fafc;--hero-muted:#dbe6ef;--hero-label:var(--columbia);--hero-line:#49618d;--button-bg:var(--columbia);--button-ink:var(--navy);--token-surface:#1b3974;--token-line:#7894b9;--token-ink:#f4f8fb;--token-accent:var(--columbia);--token-accent-ink:var(--navy);--token-shadow:#40608c;background:var(--hero-bg);color:var(--hero-muted);border-bottom:1px solid var(--hero-line)}
 .hero :focus-visible{outline-color:var(--hero-label)}
 .hero>.wrap{padding-block:72px 76px}
 .hero-composition{display:grid;grid-template-columns:minmax(0,1.65fr) minmax(0,1fr);gap:clamp(44px,5vw,72px);align-items:center}
@@ -39,7 +39,7 @@ h3{font:600 20px/1.4 var(--body)}
 .course-links a{display:inline-flex;align-items:center;justify-content:center;min-height:48px;padding:10px 20px;border:1px solid var(--hero-line);border-radius:2px;font-weight:600;color:var(--hero-ink);text-decoration:none}
 .course-links a:hover{color:var(--hero-ink);background:rgba(185,217,235,.12)}
 .course-links .primary{background:var(--button-bg);border-color:var(--button-bg);color:var(--button-ink)}
-.course-links .primary:hover{background:var(--blue);border-color:var(--blue);color:#fff}
+.course-links .primary:hover{background:#d4e7f1;border-color:#d4e7f1;color:var(--navy)}
 .course-aside{min-width:0}
 .course-facts{margin:0 0 26px;border-top:3px solid var(--hero-label)}
 .course-facts>div{display:grid;grid-template-columns:96px minmax(0,1fr);align-items:baseline;gap:18px;padding-block:13px;border-bottom:1px solid var(--hero-line)}
